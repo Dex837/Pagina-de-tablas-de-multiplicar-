@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Proyecto Tablas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= MENU ================= -->
+
+    <div id="menu" class="pantalla menu-principal">
+
+
+        <div class = "contenedor"
+
+          <h1>TABLAS DE MULTIPLICAR</h1>
+
+         <button id="btnEvaluacion">
+            Iniciar Evaluación
+         </button>
+
+         <button id="btnRepaso">
+            Repasar Tablas
+         </button>
+
+         <button id="btnSalir">
+            Salir
+         </button>
+        </div>
+    </div>
+
+
+    <!-- ================= EVALUACION ================= -->
+
+<div id="evaluacion" class="pantalla oculto">
+
+    <div class = "contenedor">
+     <h1>Evaluación</h1>
+
+     <div id="pregunta"></div>
+     <div id="resultado"></div>
+
+     <input
+        type="number"
+        id="respuesta"
+        placeholder="Escribe tu respuesta">
+
+     <button id="btnComprobar">
+
+        Comprobar
+
+     </button>
+
+     <h3 id="mensaje"></h3>
+
+     <img
+        id="cara"
+        width="180"
+        style="display:none;">
+
+      <div class="botones">
+
+        <button id="btnOtra">
+
+            Otra pregunta
+
+        </button>
+
+        <button id="btnMenuEvaluacion">
+
+            Menú
+
+        </button>
+
+      </div>
+    </div>
+</div>
+
+    <!-- ================= REPASO ================= -->
+
+<div id="repaso" class="pantalla oculto">
+ <div class = "contenedor">
+
+    <h1>Repasar Tablas</h1>
+
+    <div id="tabla"></div>
+
+    <div id="listaTablas" class="oculto">
+
+    </div>
+
+    <div class="botones">
+
+        <button id="btnRepetir">
+
+            Repetir
+
+        </button>
+
+        <button id="btnTablas">
+
+            Tablas
+
+        </button>
+
+        <button id="btnMenuRepaso">
+
+            Menú
+
+        </button>
+
+    </div>
+ </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
